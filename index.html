@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>注音小學堂配對遊戲</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: url('注音小學堂 配對頁面.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .symbol-box {
+      position: absolute;
+      width: 240px; /* 這裡改寬度 */
+      height: 100px;
+      border: 2px solid #333;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 100px;
+      font-size: 48px;
+      background: rgba(255,255,255,0.3); /* 透明度調低 */
+      user-select: none;
+      pointer-events: none; /* 讓框框不擋住拖曳 */
+    }
+  </style>
+</head>
+<body>
+  <!-- 注音符號框框 -->
+  <div id="boxes"></div>
+  <!-- p5.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
